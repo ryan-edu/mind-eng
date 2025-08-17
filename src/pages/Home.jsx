@@ -90,14 +90,17 @@ const Home = () => {
             Pakistan's premier manufacturer of high-quality LPG bowsers,
             delivering safety, reliability, and innovation to the energy sector.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
             <Link
               to="/contact"
-              className="btn-primary inline-flex items-center"
+              className="btn-primary inline-flex items-center justify-center w-full sm:w-auto min-w-0 sm:min-w-48"
             >
               Contact Us Today <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            <Link to="/products" className="btn-secondary">
+            <Link
+              to="/products"
+              className="btn-secondary w-full sm:w-auto min-w-0 sm:min-w-48 text-center"
+            >
               View Our Products
             </Link>
           </div>
@@ -295,13 +298,16 @@ const Home = () => {
             Get in touch with our team today to discuss your LPG bowser
             requirements and receive a customized solution that fits your needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="btn-secondary">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
+            <Link
+              to="/contact"
+              className="btn-secondary w-full sm:w-auto min-w-0 sm:min-w-48 text-center"
+            >
               Get Quote Today
             </Link>
             <Link
               to="/products"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 w-full sm:w-auto min-w-0 sm:min-w-48 text-center"
             >
               Browse Products
             </Link>
